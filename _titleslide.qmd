@@ -1,0 +1,29 @@
+::: flex
+::: w-0
+
+:::
+::: w-100
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+## {{< meta talk-title >}} {background-image="assets/website_bkg.png" background-position="top"}
+
+<!---- {background-image="gfx/cover-art-1.svg" background-position="bottom"} --->
+
+#### {{< meta talk-subtitle >}}
+
+<br>
+
+
+{{< meta author >}} 
+
+{{< meta other-authors >}}
+
+{{< meta talk-date >}}
+
+:::
+:::

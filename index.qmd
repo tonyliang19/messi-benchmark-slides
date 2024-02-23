@@ -1,0 +1,88 @@
+---
+talk-title: " MESSI-benchmark"
+talk-subtitle: "Multiomics Experiments with SysStematic Interrogation , Nextflow pipeline for benchmarking multi-omics methods"
+author: "Tony Liang"
+other-authors: "Dr. Amrit Singh"
+talk-date: "March 7, 2024"
+format: revealjs
+---
+
+<!-- Title slide edit from other slide -->
+
+{{< include _titleslide.qmd >}}
+
+
+## First slide
+
+::: {.callout-note}
+
+This slide should have the overview of what is the problem
+
+:::
+
+- Problem
+- Existing solution and limitation
+- Our method
+
+
+## Second slide
+
+::: {.callout-note}
+
+This slide should have the figure for what is doing of the pipeline
+
+:::
+
+## Final slide
+
+::: {.callout-note}
+
+This slide could have what have found now or expected to find
+
+:::
+
+## {.smaller}
+
+### Acknowledgements
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+:::: {.grid}
+
+::: {.g-col-6}
+
+- Dr.Amrit Singh
+- Dr. Young Woong Kim
+- Dr. Maryam Ahmadzadeh
+- Rishika Daswani
+- Roy He
+- Michael Yoon
+- Jeffrey Tang
+
+:::
+
+::: {.g-col-6}
+
+- Akshdeep Sandhu
+- Yovindu Don
+- Raam Sivakumar
+- Prabhleen Sandhu
+- Mingming Zhang
+- Samuel Leung
+
+:::
+
+
+::::
+
+:::
+
+::: {.column width="50%"}
+
+Another thing goes here maybe, like lab pic
+
+:::
+
+::::
