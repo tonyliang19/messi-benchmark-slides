@@ -13,32 +13,71 @@ format: revealjs
 {{< include _titleslide.qmd >}}
 
 
-## First slide
+## Multiomics Integration and Existing problem
 
-::: {.callout-note}
+Profiling of different molecular measurements (i.e. genes, proteins, metabolites) from same biological samples.
 
-This slide should have the overview of what is the problem
+
+<!--- Change color for this --->
+::: {.callout-tip}
+
+# Motivation
+
+- Multiomics is a new emerging field of study --> How to levarage it?
+
+- Many integration methods --> Which to use and under what circumstances?
+<!-- - "Gap" between biologists and computer-based multiomics methods. -->
+
+- Reproducibility crisis --> How to reproduce method and get reliable results?
 
 :::
 
-- Problem
-- Existing solution and limitation
-- Our method
+<!---- 
+
+Fix this point of solution, make a more concrete and summarized 
+note point for audiences
+
+Make incremental as  well
+---->
+
+Solution:
+
+- Propose a systematic workflow to benchmark (measure) these methods with a lot of datasets.
+
+<!-- ::: {.callout-note}
+
+# How to leverage multiple modalities?
+
+...
+
+::: -->
+
+<!-- ::: {.callout-note}
+
+- Which method to choose? 
+- How to interpret the results?
+- How to reproduce these and present to your labmates?
+
+::: -->
 
 
-## Second slide
+## Overview of MESSI-benchmark
 
 ::: {.callout-note}
 
 This slide should have the figure for what is doing of the pipeline
 
+
+- Add key points of why pipeline is good, and what usage
+
 :::
 
-## Final slide
+## Progress, results, and future directions
 
 ::: {.callout-note}
 
 This slide could have what have found now or expected to find
+
 
 :::
 
@@ -50,11 +89,8 @@ This slide could have what have found now or expected to find
 
 ::: {.column width="50%"}
 
-:::: {.grid}
 
-::: {.g-col-6}
-
-- Dr. Amrit Singh
+- [Dr. Amrit Singh]{.bold}
 - Dr. Young Woong Kim
 - Dr. Maryam Ahmadzadeh
 - Rishika Daswani
@@ -62,21 +98,12 @@ This slide could have what have found now or expected to find
 - Michael Yoon
 - Jeffrey Tang
 
-:::
-
-::: {.g-col-6}
-
 - Akshdeep Sandhu
 - Yovindu Don
 - Raam Sivakumar
 - Prabhleen Sandhu
 - Mingming Zhang
 - Samuel Leung
-
-:::
-
-
-::::
 
 :::
 
