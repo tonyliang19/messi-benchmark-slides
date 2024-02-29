@@ -52,6 +52,8 @@
 .ttu { text-transform: uppercase; }
 .ttn { text-transform: none; }
 
+.bold { font-weight: bold; }
+
 /*
 
   FLEXBOX

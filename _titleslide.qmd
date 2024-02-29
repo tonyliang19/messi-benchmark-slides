@@ -10,20 +10,34 @@
 <br>
 <br>
 
+
 ## {{< meta talk-title >}} {background-image="assets/website_bkg.png" background-position="top"}
 
 <!---- {background-image="gfx/cover-art-1.svg" background-position="bottom"} --->
 
-#### {{< meta talk-subtitle >}}
+::: {.f1}
+
+{{< meta talk-subtitle >}}
+
+:::
+
+::: {.f2}
+
+{{< meta talk-descrip >}}
+
+:::
 
 <br>
 
+::: {.f3 .bold}
 
 {{< meta author >}} 
 
-{{< meta other-authors >}}
+Supervisor: {{< meta other-authors >}}
 
 {{< meta talk-date >}}
+
+:::
 
 :::
 :::

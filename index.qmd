@@ -1,7 +1,8 @@
 ---
 talk-title: " MESSI-benchmark"
-talk-subtitle: "Multiomics Experiments with SysStematic Interrogation , Nextflow pipeline for benchmarking multi-omics methods"
-author: "Tony Liang"
+talk-subtitle: "Multiomics Experiments with SyStematic Interrogation"
+talk-descrip: "A pipeline for benchmarking multi-omics integration methods on classification problems using Nextflow"
+author: "Chunqing Tony Liang"
 other-authors: "Dr. Amrit Singh"
 talk-date: "March 7, 2024"
 format: revealjs
@@ -53,7 +54,7 @@ This slide could have what have found now or expected to find
 
 ::: {.g-col-6}
 
-- Dr.Amrit Singh
+- Dr. Amrit Singh
 - Dr. Young Woong Kim
 - Dr. Maryam Ahmadzadeh
 - Rishika Daswani
