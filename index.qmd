@@ -40,9 +40,17 @@ note point for audiences
 Make incremental as  well
 ---->
 
-Solution:
+::: {.fragment .incremental}
 
-- Propose a systematic workflow to benchmark (measure) these methods with a lot of datasets.
+Solutions:
+
+- Test many methods at the same time
+
+- Make pipeline to follow sames steps just like a "protocol"
+
+- Report relevant metrics (like those of binary classification)
+
+:::
 
 <!-- ::: {.callout-note}
 
@@ -97,7 +105,6 @@ This slide could have what have found now or expected to find
 - Roy He
 - Michael Yoon
 - Jeffrey Tang
-
 - Akshdeep Sandhu
 - Yovindu Don
 - Raam Sivakumar
@@ -106,7 +113,6 @@ This slide could have what have found now or expected to find
 - Samuel Leung
 
 :::
-
 ::: {.column width="50%"}
 
 Another thing goes here maybe, like lab pic
