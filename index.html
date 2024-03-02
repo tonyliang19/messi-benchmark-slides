@@ -29,27 +29,7 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for citations */
-    div.csl-bib-body { }
-    div.csl-entry {
-      clear: both;
-      margin-bottom: 0em;
-    }
-    .hanging-indent div.csl-entry {
-      margin-left:2em;
-      text-indent:-2em;
-    }
-    div.csl-left-margin {
-      min-width:2em;
-      float:left;
-    }
-    div.csl-right-inline {
-      margin-left:2em;
-      padding-left:1em;
-    }
-    div.csl-indent {
-      margin-left: 2em;
-    }  </style>
+  </style>
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css">
   <link rel="stylesheet" href="tachyons-minimal.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -386,12 +366,9 @@
 <h2>Multiomics data and analysis</h2>
 <div class="columns">
 <div class="column" style="width:48%;">
-<!---
-![](assets/multi-omics-integration.png)
---->
-<div class="cell fig-cap-location-bottom" data-layout-align="center">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-multiomics-intro" class="quarto-figure quarto-figure-center" data-fig-align="center" data-cap-location="bottom" width="542">
+<div id="fig-multiomics-intro" class="margin-caption quarto-figure quarto-figure-center" width="542" data-fig-align="center" data-cap-location="margin">
 <figure class="quarto-float quarto-float-fig">
 <div aria-describedby="fig-multiomics-intro-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img data-src="assets/multi-omics-integration.png" class="quarto-figure quarto-figure-center" width="542">
@@ -426,42 +403,53 @@ Figure&nbsp;1: Overview of multiomics data and integration <sup>1</sup>
 </div>
 </div>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn1"><p><span class="citation" data-cites="smith-2011">Shannon et al., <em>Manuscript Under Revision</em>, 2024.</span></p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn1"><p><span class="citation" data-cites="shannon2024">Shannon et al., <em>Manuscript Under Revision</em>, 2024.</span></p></li></ol></aside></section>
 <section id="multiomics-data-integration-methods" class="slide level2">
 <h2>Multiomics data integration methods</h2>
-
-<img data-src="assets/methods_avail.jpg" class="r-stretch"><ul>
-<li><p>Many integration methods –&gt; Which to use, how to choose them? <!-- - "Gap" between biologists and computer-based multiomics methods. --></p></li>
+<div class="cell fig-cap-location-bottom" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-integration-methods" class="quarto-figure quarto-figure-center" width="700" data-fig-align="center" data-cap-location="bottom">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-integration-methods-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="assets/methods_avail.jpg" class="quarto-figure quarto-figure-center" width="700">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig" id="fig-integration-methods-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Overview of multi-omics data integration tools <sup>1</sup>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><p>aasasd</p></li>
+<li><p>Many integration methods –&gt; Which to use, how to choose them?</p></li>
 <li><p>Reproducibility crisis –&gt; How to reproduce method and get reliable results?</p></li>
 <li><p>Existing benchmark studies are not 100% complete or all-encompassing</p></li>
 </ul>
-</section>
+<aside><ol class="aside-footnotes"><li id="fn2"><p><span class="citation" data-cites="subramanian2020multi">Indhupriya Subramanian et al., <span>“Multi-Omics Data Integration, Interpretation, and Its Application,”</span> <em>Bioinformatics and Biology Insights</em> 14 (2020): 1177932219899051.</span></p></li></ol></aside></section>
 <section id="overview-of-messi" class="slide level2">
 <h2>Overview of MESSI</h2>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<!-- ```{=html}
+<style>
+figcaption {
+   text-align: center;
+} 
+</style>
+``` -->
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-messi-overview" class="quarto-figure quarto-figure-center" height="400px" data-fig-align="center" width="600px">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-messi-overview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="assets/overview.png" class="quarto-figure quarto-figure-center" width="600" height="400">
 </div>
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
-<ul>
-<li><p>Image goes here</p></li>
-<li><p>…</p></li>
-<li><p>…</p></li>
-<li><p>…</p></li>
-<li><p>…</p></li>
-<li><p>…</p></li>
-<li><p>…</p></li>
-</ul>
+<figcaption class="figure quarto-float-caption quarto-float-fig" id="fig-messi-overview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Overview of MESSI workflow
+</figcaption>
+</figure>
 </div>
 </div>
 </div>
-<!---
-![](assets/overview.png)
---->
 <div class="columns f3">
 <div class="column" style="width:48%;">
 <ul>
@@ -479,10 +467,10 @@ Figure&nbsp;1: Overview of multiomics data and integration <sup>1</sup>
 </ul>
 </div>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn2"><p><span class="citation" data-cites="ewels2020nf">Philip A Ewels et al., <span>“The Nf-Core Framework for Community-Curated Bioinformatics Pipelines,”</span> <em>Nature Biotechnology</em> 38, no. 3 (2020): 276–78.</span></p></li></ol></aside></section>
-<section id="section-1" class="slide level2 smaller">
+<aside><ol class="aside-footnotes"><li id="fn3"><p><span class="citation" data-cites="ewels2020nf">Philip A Ewels et al., <span>“The Nf-Core Framework for Community-Curated Bioinformatics Pipelines,”</span> <em>Nature Biotechnology</em> 38, no. 3 (2020): 276–78.</span></p></li></ol></aside></section>
+<section id="acknowledgements" class="slide level2 smaller">
 <h2></h2>
-<h3 id="acknowledgements">Acknowledgements</h3>
+<h3 id="acknowledgements-1">Acknowledgements</h3>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
@@ -501,22 +489,19 @@ Figure&nbsp;1: Overview of multiomics data and integration <sup>1</sup>
 <li>Samuel Leung</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p>Another thing goes here maybe, like lab pic</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="assets/lab_pic.jpg" class="quarto-figure quarto-figure-center" width="1024"></p>
+</figure>
 </div>
 </div>
-</section>
-<section id="references" class="slide level2 smaller scrollable">
-<h2>References</h2>
+</div>
+</div>
+</div>
 <div class="footer footer-default">
 
-</div>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-smith-2011" class="csl-entry" role="listitem">
-al., Shannon et. <em>Manuscript Under Revision</em>, 2024.
-</div>
-<div id="ref-ewels2020nf" class="csl-entry" role="listitem">
-Ewels, Philip A, Alexander Peltzer, Sven Fillinger, Harshil Patel, Johannes Alneberg, Andreas Wilm, Maxime Ulysse Garcia, Paolo Di Tommaso, and Sven Nahnsen. <span>“The Nf-Core Framework for Community-Curated Bioinformatics Pipelines.”</span> <em>Nature Biotechnology</em> 38, no. 3 (2020): 276–78.
-</div>
 </div>
 </section>
 

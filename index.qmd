@@ -19,15 +19,11 @@ format: revealjs
 
 ::: {.column width="48%"}
 
-<!---
-![](assets/multi-omics-integration.png)
---->
-
 ```{r}
 #| label: "fig-multiomics-intro"
 #| fig-align: center
-#| fig-cap-location: bottom
-#| fig-cap: "Overview of multiomics data and integration ^[@smith-2011]"
+#| fig-cap-location: margin
+#| fig-cap: "               Overview of multiomics data and integration ^[@shannon2024]"
 knitr::include_graphics("assets/multi-omics-integration.png")
 ```
 
@@ -60,12 +56,18 @@ knitr::include_graphics("assets/multi-omics-integration.png")
 
 ## Multiomics data integration methods
 
+```{r}
+#| label: "fig-integration-methods"
+#| fig-align: center
+#| fig-cap-location: bottom
+#| fig-cap: "Overview of multi-omics data integration tools ^[@subramanian2020multi]"
+knitr::include_graphics("assets/methods_avail.jpg")
+```
 
 
-![](assets/methods_avail.jpg)
+- aasasd
 
 - Many integration methods --> Which to use, how to choose them?
-<!-- - "Gap" between biologists and computer-based multiomics methods. -->
 
 - Reproducibility crisis --> How to reproduce method and get reliable results?
 
@@ -75,30 +77,21 @@ knitr::include_graphics("assets/multi-omics-integration.png")
 
 ## Overview of MESSI
 
+<!-- ```{=html}
+<style>
+figcaption {
+   text-align: center;
+} 
+</style>
+``` -->
 
-::: {.callout-note}
+```{r out.width="600px", out.height="400px"}
+#| label: "fig-messi-overview"
+#| fig-align: center
+#| fig-cap: "Overview of MESSI workflow"
+knitr::include_graphics("assets/overview.png")
+```
 
-- Image goes here
-
-- ...
-
-- ...
-
-
-- ...
-
-- ...
-
-
-- ...
-
-- ...
-
-:::
-
-<!---
-![](assets/overview.png)
---->
 
 :::: {.columns .f3}
 
@@ -134,7 +127,9 @@ knitr::include_graphics("assets/multi-omics-integration.png")
 
 
 
-## {.smaller}
+## {#acknowledgements .smaller}
+
+
 
 ### Acknowledgements
 
@@ -160,10 +155,12 @@ knitr::include_graphics("assets/multi-omics-integration.png")
 :::
 ::: {.column width="50%"}
 
-Another thing goes here maybe, like lab pic
+```{r}
+knitr::include_graphics("assets/lab_pic.jpg")
+```
 
 :::
 
 ::::
 
-## References
+
