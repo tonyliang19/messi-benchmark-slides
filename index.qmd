@@ -56,7 +56,7 @@ knitr::include_graphics("assets/multi-omics-integration.png")
 
 ## Multiomics data integration methods
 
-```{r}
+```{r out.width="600px", out.height="400px"}
 #| label: "fig-integration-methods"
 #| fig-align: center
 #| fig-cap-location: bottom
@@ -64,8 +64,7 @@ knitr::include_graphics("assets/multi-omics-integration.png")
 knitr::include_graphics("assets/methods_avail.jpg")
 ```
 
-
-- aasasd
+::: {.f3}
 
 - Many integration methods --> Which to use, how to choose them?
 
@@ -73,17 +72,11 @@ knitr::include_graphics("assets/methods_avail.jpg")
 
 - Existing benchmark studies are not 100% complete or all-encompassing
 
+:::
 
 
 ## Overview of MESSI
 
-<!-- ```{=html}
-<style>
-figcaption {
-   text-align: center;
-} 
-</style>
-``` -->
 
 ```{r out.width="600px", out.height="400px"}
 #| label: "fig-messi-overview"
