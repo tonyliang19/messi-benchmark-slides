@@ -1,8 +1,8 @@
-::: flex
+<!-- ::: flex
 ::: w-0
 
 :::
-::: w-100
+::: w-100 -->
 
 <br>
 <br>
@@ -10,9 +10,9 @@
 <br>
 <br>
 
-<!---
+<!-- -
 ## {{< meta talk-title >}} {background-image="assets/website_bkg.png" background-position="top"}
----->
+-- -->
 
 ## {{< meta talk-subtitle >}} {background-image="assets/website_bkg.png" background-position="top"}
 
