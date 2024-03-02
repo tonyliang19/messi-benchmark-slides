@@ -23,22 +23,17 @@ Profiling of different molecular measurements (i.e. genes, proteins, metabolites
 
 # Motivation
 
-- Multiomics is a new emerging field of study --> How to levarage it?
+~~- Multiomics is a new emerging field of study --> How to levarage it?~~
 
-- Many integration methods --> Which to use and under what circumstances?
+- Many integration methods --> Which to use, how to choose them?
 <!-- - "Gap" between biologists and computer-based multiomics methods. -->
 
 - Reproducibility crisis --> How to reproduce method and get reliable results?
 
+- Existing benchmark studies are not 100% complete or all-ecompassing
+
 :::
 
-<!---- 
-
-Fix this point of solution, make a more concrete and summarized 
-note point for audiences
-
-Make incremental as  well
----->
 
 ::: {.fragment .incremental}
 
