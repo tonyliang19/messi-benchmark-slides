@@ -350,7 +350,7 @@
 <div class="column" style="width:48%;">
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-multiomics-intro" class="margin-caption quarto-figure quarto-figure-center" width="542" data-cap-location="margin" data-fig-align="center">
+<div id="fig-multiomics-intro" class="margin-caption quarto-figure quarto-figure-center" data-cap-location="margin" data-fig-align="center" width="542">
 <figure class="quarto-float quarto-float-fig">
 <div aria-describedby="fig-multiomics-intro-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img data-src="assets/multi-omics-integration.png" class="quarto-figure quarto-figure-center" width="542">
@@ -388,12 +388,14 @@ Figure&nbsp;1: Overview of multiomics data and integration <sup>1</sup>
 <aside><ol class="aside-footnotes"><li id="fn1"><p><span class="citation" data-cites="shannon2024">Shannon et al., <em>Manuscript Under Revision</em>, 2024.</span></p></li></ol></aside></section>
 <section id="multiomics-data-integration-methods" class="slide level2">
 <h2>Multiomics data integration methods</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
 <div class="cell fig-cap-location-bottom" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-integration-methods" class="quarto-figure quarto-figure-center" data-fig-align="center" width="600px" data-cap-location="bottom" height="400px">
+<div id="fig-integration-methods" class="quarto-figure quarto-figure-center" height="480px" data-cap-location="bottom" data-fig-align="center" width="600px">
 <figure class="quarto-float quarto-float-fig">
 <div aria-describedby="fig-integration-methods-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="assets/methods_avail.jpg" class="quarto-figure quarto-figure-center" width="600" height="400">
+<img data-src="assets/methods_avail.jpg" class="quarto-figure quarto-figure-center" width="600" height="480">
 </div>
 <figcaption class="figure quarto-float-caption quarto-float-fig" id="fig-integration-methods-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;2: Overview of multi-omics data integration tools <sup>1</sup>
@@ -402,12 +404,33 @@ Figure&nbsp;2: Overview of multi-omics data integration tools <sup>1</sup>
 </div>
 </div>
 </div>
-<div class="f3">
+</div><!--- Empty column here ---><div class="column" style="width:5%;">
+<!--- Empty column here --->
+</div><div class="column" style="width:50%;">
+<p><br></p>
+<div class="fragment">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Question arises</strong></p>
+</div>
+<div class="callout-content">
 <ul>
-<li><p>Many integration methods –&gt; Which to use, how to choose them?</p></li>
-<li><p>Reproducibility crisis –&gt; How to reproduce method and get reliable results?</p></li>
-<li><p>Existing benchmark studies are not 100% complete or all-encompassing</p></li>
+<li><p>Many integration methods</p>
+<p>—&gt; Which to use, how to choose them?</p></li>
+<li><p>Reproducibility crisis</p>
+<p>—&gt; How to reproduce method and get reliable results?</p></li>
+<li><p>Existing benchmark studies are not 100% complete or all-encompassing</p>
+<p>—&gt; Technical difficulty in implementation?</p></li>
 </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <aside><ol class="aside-footnotes"><li id="fn2"><p><span class="citation" data-cites="subramanian2020multi">Indhupriya Subramanian et al., <span>“Multi-Omics Data Integration, Interpretation, and Its Application,”</span> <em>Bioinformatics and Biology Insights</em> 14 (2020): 1177932219899051.</span></p></li></ol></aside></section>
 <section id="overview-of-messi" class="slide level2">
@@ -426,7 +449,7 @@ Figure&nbsp;3: Overview of MESSI workflow
 </div>
 </div>
 </div>
-<div class="columns f3">
+<div class="columns f3 fragment">
 <div class="column" style="width:48%;">
 <ul>
 <li><p>Generalizable for more integration methods</p></li>
@@ -437,13 +460,13 @@ Figure&nbsp;3: Overview of MESSI workflow
 
 </div><!--- empty width here ---><div class="column" style="width:40%;">
 <ul>
-<li><p>Setup easily through nf-core<sup>1</sup></p></li>
+<li><p>Multiple data types (bulk, sc, spatial)</p></li>
 <li><p>Help to develop new integration method</p></li>
 <li><p>Compare large set of independent data at once</p></li>
 </ul>
 </div>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn3"><p><span class="citation" data-cites="ewels2020nf">Philip A Ewels et al., <span>“The Nf-Core Framework for Community-Curated Bioinformatics Pipelines,”</span> <em>Nature Biotechnology</em> 38, no. 3 (2020): 276–78.</span></p></li></ol></aside></section>
+</section>
 <section id="acknowledgements" class="slide level2 smaller">
 <h2></h2>
 <h3 id="acknowledgements-1">Acknowledgements</h3>
@@ -863,6 +886,43 @@ Figure&nbsp;3: Overview of MESSI workflow
           const note = window.document.getElementById(id);
           return note.innerHTML;
         });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
       }
     });
     </script>

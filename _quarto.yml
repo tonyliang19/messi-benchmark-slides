@@ -21,7 +21,7 @@ format:
     code-overflow: wrap
     lang: en-CA
     link-citations: false
-    citations-hover: false
+    #citations-hover: false
     csl: chicago-fullnote-bibliography.csl
 execute: 
   echo: false

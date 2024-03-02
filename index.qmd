@@ -89,7 +89,11 @@ knitr::include_graphics("assets/multi-omics-integration.png")
 
 ## Multiomics data integration methods
 
-```{r out.width="600px", out.height="400px"}
+:::: {.columns}
+
+::: {.column width="45%"}
+
+```{r out.width="600px", out.height="480px"}
 #| label: "fig-integration-methods"
 #| fig-align: center
 #| fig-cap-location: bottom
@@ -97,15 +101,38 @@ knitr::include_graphics("assets/multi-omics-integration.png")
 knitr::include_graphics("assets/methods_avail.jpg")
 ```
 
-::: {.f3}
+:::
+<!--- Empty column here --->
+::: {.column width="5%"} 
+<!--- Empty column here --->
+:::
 
-- Many integration methods --> Which to use, how to choose them?
 
-- Reproducibility crisis --> How to reproduce method and get reliable results?
+::: {.column width="50%"}
+
+<br>
+
+::: {.callout-note .fragment}
+
+# Question arises
+
+- Many integration methods 
+  
+  ---> Which to use, how to choose them?
+
+- Reproducibility crisis 
+  
+  ---> How to reproduce method and get reliable results?
 
 - Existing benchmark studies are not 100% complete or all-encompassing
 
+  ---> Technical difficulty in implementation?
+
 :::
+
+:::
+
+::::
 
 
 ## Overview of MESSI
@@ -119,7 +146,7 @@ knitr::include_graphics("assets/overview.png")
 ```
 
 
-:::: {.columns .f3}
+:::: {.columns .f3 .fragment}
 
 ::: {.column width="48%"}
 
@@ -141,7 +168,7 @@ knitr::include_graphics("assets/overview.png")
 
 ::: {.column width="40%"}
 
-- Setup easily through nf-core^[@ewels2020nf]
+- Multiple data types (bulk, sc, spatial)
 
 - Help to develop new integration method
 
