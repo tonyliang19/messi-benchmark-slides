@@ -4,3 +4,6 @@ help:
 
 pre:
 	quarto preview index.qmd
+
+pdf:
+	decktape index.html presentation.pdf --screenshots-size=1280x720
