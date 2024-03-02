@@ -217,3 +217,7 @@ knitr::include_graphics("assets/lab_pic.jpg")
 ::::
 
 
+::: {.footer}
+![](assets/logo.png)
+:::
+
