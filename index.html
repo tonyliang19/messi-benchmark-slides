@@ -356,18 +356,25 @@
 </div>
 <div class="w-100">
 <p><br> <br> <br> <br> <br></p>
+<!---
+## MESSI-benchmark {background-image="assets/website_bkg.png" background-position="top"}
+---->
 <section id="section" class="slide level2" data-background-image="assets/website_bkg.png" data-background-position="top">
-<h2>MESSI-benchmark</h2>
+<h2>MESSI: Multiomics Experiments with SyStematic Interrogation</h2>
 <!---- {background-image="gfx/cover-art-1.svg" background-position="bottom"} --->
-<div class="f1">
-<p>Multiomics Experiments with SyStematic Interrogation</p>
-</div>
+<!---
+::: {.f1}
+
+
+:::
+--->
 <div class="f2">
 <p>A pipeline for benchmarking multi-omics integration methods on classification problems using Nextflow</p>
 </div>
 <p><br></p>
 <div class="f3 bold">
 <p>Chunqing Tony Liang</p>
+<p>Msc student in Bioinformatics</p>
 <p>Supervisor: Dr.&nbsp;Amrit Singh</p>
 <p>March 7, 2024</p>
 </div>
@@ -375,10 +382,30 @@
 </div>
 </div>
 </section>
-<section id="multiomics-integration-and-existing-problem" class="slide level2">
-<h2>Multiomics Integration and Existing problem</h2>
-<p>Profiling of different molecular measurements (i.e.&nbsp;genes, proteins, metabolites) from same biological samples.</p>
-<!--- Change color for this --->
+<section id="multiomics-data-and-analysis" class="slide level2">
+<h2>Multiomics data and analysis</h2>
+<div class="columns">
+<div class="column" style="width:48%;">
+<!---
+![](assets/multi-omics-integration.png)
+--->
+<div class="cell fig-cap-location-bottom" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-multiomics-intro" class="quarto-figure quarto-figure-center" data-fig-align="center" data-cap-location="bottom" width="542">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-multiomics-intro-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="assets/multi-omics-integration.png" class="quarto-figure quarto-figure-center" width="542">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig" id="fig-multiomics-intro-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Overview of multiomics data and integration <sup>1</sup>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:52%;">
+<p><br></p>
+<p><br></p>
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -388,40 +415,29 @@
 <p><strong>Motivation</strong></p>
 </div>
 <div class="callout-content">
-<p><del>- Multiomics is a new emerging field of study –&gt; How to levarage it?</del></p>
 <ul>
+<li><p>Technological advancement and reduced costs –&gt; studies with multiomics data</p></li>
+<li><p>Multiomics data –&gt; bulk/single-cell/spatial data</p></li>
+<li><p>More generalized –&gt; “multimodal data”, other non-omics data</p></li>
+<li><p>Types of integrations: by sample (N), by omics (P), or both</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn1"><p><span class="citation" data-cites="smith-2011">Shannon et al., <em>Manuscript Under Revision</em>, 2024.</span></p></li></ol></aside></section>
+<section id="multiomics-data-integration-methods" class="slide level2">
+<h2>Multiomics data integration methods</h2>
+
+<img data-src="assets/methods_avail.jpg" class="r-stretch"><ul>
 <li><p>Many integration methods –&gt; Which to use, how to choose them? <!-- - "Gap" between biologists and computer-based multiomics methods. --></p></li>
 <li><p>Reproducibility crisis –&gt; How to reproduce method and get reliable results?</p></li>
-<li><p>Existing benchmark studies are not 100% complete or all-ecompassing</p></li>
+<li><p>Existing benchmark studies are not 100% complete or all-encompassing</p></li>
 </ul>
-</div>
-</div>
-</div>
-<div class="fragment">
-<p>Solutions:</p>
-<ul>
-<li class="fragment"><p>Test many methods at the same time</p></li>
-<li class="fragment"><p>Make pipeline to follow sames steps just like a “protocol”</p></li>
-<li class="fragment"><p>Report relevant metrics (like those of binary classification)</p></li>
-</ul>
-</div>
-<!-- ::: {.callout-note}
-
-# How to leverage multiple modalities?
-
-...
-
-::: -->
-<!-- ::: {.callout-note}
-
-- Which method to choose? 
-- How to interpret the results?
-- How to reproduce these and present to your labmates?
-
-::: -->
 </section>
-<section id="overview-of-messi-benchmark" class="slide level2">
-<h2>Overview of MESSI-benchmark</h2>
+<section id="overview-of-messi" class="slide level2">
+<h2>Overview of MESSI</h2>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -431,9 +447,9 @@
 <p><strong>Note</strong></p>
 </div>
 <div class="callout-content">
-<p>This slide should have the figure for what is doing of the pipeline</p>
 <ul>
-<li><p>This is the space for the figure?</p></li>
+<li><p>Image goes here</p></li>
+<li><p>…</p></li>
 <li><p>…</p></li>
 <li><p>…</p></li>
 <li><p>…</p></li>
@@ -443,16 +459,19 @@
 </div>
 </div>
 </div>
-<div class="columns fragment f3">
+<!---
+![](assets/overview.png)
+--->
+<div class="columns f3">
 <div class="column" style="width:48%;">
 <ul>
 <li><p>Generalizable for more integration methods</p></li>
 <li><p>Data transformable for Python or R based methods</p></li>
-<li><p>Reproducible workflow, no more fail to reproduce research</p></li>
+<li><p>Reproducible workflow, results/findings</p></li>
 </ul>
-</div><div class="column" style="width:12%;">
+</div><!--- empty width here ---><div class="column" style="width:12%;">
 
-</div><div class="column" style="width:40%;">
+</div><!--- empty width here ---><div class="column" style="width:40%;">
 <ul>
 <li><p>Setup easily through nf-core<sup>1</sup></p></li>
 <li><p>Help to develop new integration method</p></li>
@@ -460,23 +479,7 @@
 </ul>
 </div>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn1"><p><span class="citation" data-cites="ewels2020nf">Ewels et al. (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span></p></li></ol></aside></section>
-<section id="progress-results-and-future-directions" class="slide level2">
-<h2>Progress, results, and future directions</h2>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
-<p>This slide could have what have found now or expected to find</p>
-</div>
-</div>
-</div>
-</section>
+<aside><ol class="aside-footnotes"><li id="fn2"><p><span class="citation" data-cites="ewels2020nf">Philip A Ewels et al., <span>“The Nf-Core Framework for Community-Curated Bioinformatics Pipelines,”</span> <em>Nature Biotechnology</em> 38, no. 3 (2020): 276–78.</span></p></li></ol></aside></section>
 <section id="section-1" class="slide level2 smaller">
 <h2></h2>
 <h3 id="acknowledgements">Acknowledgements</h3>
@@ -508,8 +511,11 @@
 
 </div>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-smith-2011" class="csl-entry" role="listitem">
+al., Shannon et. <em>Manuscript Under Revision</em>, 2024.
+</div>
 <div id="ref-ewels2020nf" class="csl-entry" role="listitem">
-Ewels, Philip A, Alexander Peltzer, Sven Fillinger, Harshil Patel, Johannes Alneberg, Andreas Wilm, Maxime Ulysse Garcia, Paolo Di Tommaso, and Sven Nahnsen. 2020. <span>“The Nf-Core Framework for Community-Curated Bioinformatics Pipelines.”</span> <em>Nature Biotechnology</em> 38 (3): 276–78.
+Ewels, Philip A, Alexander Peltzer, Sven Fillinger, Harshil Patel, Johannes Alneberg, Andreas Wilm, Maxime Ulysse Garcia, Paolo Di Tommaso, and Sven Nahnsen. <span>“The Nf-Core Framework for Community-Curated Bioinformatics Pipelines.”</span> <em>Nature Biotechnology</em> 38, no. 3 (2020): 276–78.
 </div>
 </div>
 </section>
@@ -724,6 +730,44 @@ Ewels, Philip A, Alexander Peltzer, Sven Fillinger, Harshil Patel, Johannes Alne
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
@@ -858,43 +902,6 @@ Ewels, Philip A, Alexander Peltzer, Sven Fillinger, Harshil Patel, Johannes Alne
           const note = window.document.getElementById(id);
           return note.innerHTML;
         });
-      }
-      const findCites = (el) => {
-        const parentEl = el.parentElement;
-        if (parentEl) {
-          const cites = parentEl.dataset.cites;
-          if (cites) {
-            return {
-              el,
-              cites: cites.split(' ')
-            };
-          } else {
-            return findCites(el.parentElement)
-          }
-        } else {
-          return undefined;
-        }
-      };
-      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-      for (var i=0; i<bibliorefs.length; i++) {
-        const ref = bibliorefs[i];
-        const citeInfo = findCites(ref);
-        if (citeInfo) {
-          tippyHover(citeInfo.el, function() {
-            var popup = window.document.createElement('div');
-            citeInfo.cites.forEach(function(cite) {
-              var citeDiv = window.document.createElement('div');
-              citeDiv.classList.add('hanging-indent');
-              citeDiv.classList.add('csl-entry');
-              var biblioDiv = window.document.getElementById('ref-' + cite);
-              if (biblioDiv) {
-                citeDiv.innerHTML = biblioDiv.innerHTML;
-              }
-              popup.appendChild(citeDiv);
-            });
-            return popup.innerHTML;
-          });
-        }
       }
     });
     </script>

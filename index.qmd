@@ -1,6 +1,6 @@
 ---
 talk-title: " MESSI-benchmark"
-talk-subtitle: "Multiomics Experiments with SyStematic Interrogation"
+talk-subtitle: "MESSI: Multiomics Experiments with SyStematic Interrogation"
 talk-descrip: "A pipeline for benchmarking multi-omics integration methods on classification problems using Nextflow"
 author: "Chunqing Tony Liang"
 other-authors: "Dr. Amrit Singh"
@@ -13,81 +13,94 @@ format: revealjs
 {{< include _titleslide.qmd >}}
 
 
-## Multiomics Integration and Existing problem
+## Multiomics data and analysis
 
-Profiling of different molecular measurements (i.e. genes, proteins, metabolites) from same biological samples.
+:::: {.columns}
 
+::: {.column width="48%"}
 
-<!--- Change color for this --->
+<!---
+![](assets/multi-omics-integration.png)
+--->
+
+```{r}
+#| label: "fig-multiomics-intro"
+#| fig-align: center
+#| fig-cap-location: bottom
+#| fig-cap: "Overview of multiomics data and integration ^[@smith-2011]"
+knitr::include_graphics("assets/multi-omics-integration.png")
+```
+
+:::
+
+::: {.column width="52%"}
+
+<br>
+
+<br>
+
 ::: {.callout-tip}
 
 # Motivation
 
-~~- Multiomics is a new emerging field of study --> How to levarage it?~~
+- Technological advancement and reduced costs --> studies with multiomics data
+
+- Multiomics data --> bulk/single-cell/spatial data
+
+- More generalized --> "multimodal data", other non-omics data
+
+- Types of integrations: by sample (N), by omics (P), or both
+
+:::
+
+:::
+
+::::
+
+
+## Multiomics data integration methods
+
+
+
+![](assets/methods_avail.jpg)
 
 - Many integration methods --> Which to use, how to choose them?
 <!-- - "Gap" between biologists and computer-based multiomics methods. -->
 
 - Reproducibility crisis --> How to reproduce method and get reliable results?
 
-- Existing benchmark studies are not 100% complete or all-ecompassing
-
-:::
+- Existing benchmark studies are not 100% complete or all-encompassing
 
 
-::: {.fragment .incremental}
 
-Solutions:
+## Overview of MESSI
 
-- Test many methods at the same time
-
-- Make pipeline to follow sames steps just like a "protocol"
-
-- Report relevant metrics (like those of binary classification)
-
-:::
-
-<!-- ::: {.callout-note}
-
-# How to leverage multiple modalities?
-
-...
-
-::: -->
-
-<!-- ::: {.callout-note}
-
-- Which method to choose? 
-- How to interpret the results?
-- How to reproduce these and present to your labmates?
-
-::: -->
-
-
-## Overview of MESSI-benchmark
 
 ::: {.callout-note}
 
-This slide should have the figure for what is doing of the pipeline
-
-
-- This is the space for the figure?
+- Image goes here
 
 - ...
 
 - ...
 
-- ...
 
 - ...
 
 - ...
 
+
+- ...
+
+- ...
 
 :::
 
+<!---
+![](assets/overview.png)
+--->
 
-:::: {.columns .fragment .f3}
+:::: {.columns .f3}
 
 ::: {.column width="48%"}
 
@@ -95,13 +108,17 @@ This slide should have the figure for what is doing of the pipeline
 
 - Data transformable for Python or R based methods
 
-- Reproducible workflow, no more fail to reproduce research
+- Reproducible workflow, results/findings
 
 :::
+
+<!--- empty width here --->
 
 ::: {.column width="12%"}
 
 :::
+
+<!--- empty width here --->
 
 ::: {.column width="40%"}
 
@@ -111,20 +128,11 @@ This slide should have the figure for what is doing of the pipeline
 
 - Compare large set of independent data at once
 
-
-
-
 :::
 
 ::::
-## Progress, results, and future directions
-
-::: {.callout-note}
-
-This slide could have what have found now or expected to find
 
 
-:::
 
 ## {.smaller}
 

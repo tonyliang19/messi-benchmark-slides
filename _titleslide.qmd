@@ -10,16 +10,19 @@
 <br>
 <br>
 
-
+<!---
 ## {{< meta talk-title >}} {background-image="assets/website_bkg.png" background-position="top"}
+---->
+
+## {{< meta talk-subtitle >}} {background-image="assets/website_bkg.png" background-position="top"}
 
 <!---- {background-image="gfx/cover-art-1.svg" background-position="bottom"} --->
-
+<!---
 ::: {.f1}
 
-{{< meta talk-subtitle >}}
 
 :::
+--->
 
 ::: {.f2}
 
@@ -32,6 +35,8 @@
 ::: {.f3 .bold}
 
 {{< meta author >}} 
+
+Msc student in Bioinformatics
 
 Supervisor: {{< meta other-authors >}}
 
