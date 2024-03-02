@@ -76,10 +76,52 @@ Solutions:
 This slide should have the figure for what is doing of the pipeline
 
 
-- Add key points of why pipeline is good, and what usage
+- This is the space for the figure?
+
+- ...
+
+- ...
+
+- ...
+
+- ...
+
+- ...
+
 
 :::
 
+
+:::: {.columns .fragment .f3}
+
+::: {.column width="48%"}
+
+- Generalizable for more integration methods
+
+- Data transformable for Python or R based methods
+
+- Reproducible workflow, no more fail to reproduce research
+
+:::
+
+::: {.column width="12%"}
+
+:::
+
+::: {.column width="40%"}
+
+- Setup easily through nf-core^[@ewels2020nf]
+
+- Help to develop new integration method
+
+- Compare large set of independent data at once
+
+
+
+
+:::
+
+::::
 ## Progress, results, and future directions
 
 ::: {.callout-note}
@@ -120,3 +162,5 @@ Another thing goes here maybe, like lab pic
 :::
 
 ::::
+
+## References

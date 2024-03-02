@@ -29,7 +29,27 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css">
   <link rel="stylesheet" href="tachyons-minimal.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -419,12 +439,34 @@ Make incremental as  well
 <div class="callout-content">
 <p>This slide should have the figure for what is doing of the pipeline</p>
 <ul>
-<li>Add key points of why pipeline is good, and what usage</li>
+<li><p>This is the space for the figure?</p></li>
+<li><p>…</p></li>
+<li><p>…</p></li>
+<li><p>…</p></li>
+<li><p>…</p></li>
+<li><p>…</p></li>
 </ul>
 </div>
 </div>
 </div>
-</section>
+<div class="columns fragment f3">
+<div class="column" style="width:48%;">
+<ul>
+<li><p>Generalizable for more integration methods</p></li>
+<li><p>Data transformable for Python or R based methods</p></li>
+<li><p>Reproducible workflow, no more fail to reproduce research</p></li>
+</ul>
+</div><div class="column" style="width:12%;">
+
+</div><div class="column" style="width:40%;">
+<ul>
+<li><p>Setup easily through nf-core<sup>1</sup></p></li>
+<li><p>Help to develop new integration method</p></li>
+<li><p>Compare large set of independent data at once</p></li>
+</ul>
+</div>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn1"><p><span class="citation" data-cites="ewels2020nf">Ewels et al. (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span></p></li></ol></aside></section>
 <section id="progress-results-and-future-directions" class="slide level2">
 <h2>Progress, results, and future directions</h2>
 <div class="callout callout-note callout-titled callout-style-default">
@@ -465,10 +507,19 @@ Make incremental as  well
 <p>Another thing goes here maybe, like lab pic</p>
 </div>
 </div>
+</section>
+<section id="references" class="slide level2 smaller scrollable">
+<h2>References</h2>
 <div class="footer footer-default">
 
 </div>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-ewels2020nf" class="csl-entry" role="listitem">
+Ewels, Philip A, Alexander Peltzer, Sven Fillinger, Harshil Patel, Johannes Alneberg, Andreas Wilm, Maxime Ulysse Garcia, Paolo Di Tommaso, and Sven Nahnsen. 2020. <span>“The Nf-Core Framework for Community-Curated Bioinformatics Pipelines.”</span> <em>Nature Biotechnology</em> 38 (3): 276–78.
+</div>
+</div>
 </section>
+
     </div>
   </div>
 
